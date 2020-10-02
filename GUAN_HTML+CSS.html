@@ -1,0 +1,627 @@
+<!DOCTYPE html> <!--網頁內容與架構-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <title>DONG web</title> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+
+<body class="wbac"><!--本文區-->
+    <header>  <!-- 網頁頁首區_歡迎&個人聯繫資料及聯絡方式-->
+        <p id= "top">top</p>
+        <style>
+        body{background-image: url(photo/whitebackground.jpg);background-repeat: round;background-size: contain;}
+        .ssstart { /*利用class方式去對首頁標題進行css*/   
+            color:darkturquoise;
+            text-align: center;
+            font-style: italic;
+            letter-spacing: 2px;
+            text-shadow:3px 3px 3px purple;font-size: 50px;
+        }
+        .telemail {color: orange;}
+    #學歷,#工作經歷,#專長及技能,#證照,#獲獎經歷,#專業經歷,#專案成就列表,#自傳{color:slateblue;   /*利用id去對書籤個標題進行css*/     
+            font-style: oblique;
+            font-weight:bold;
+            text-shadow:3px 3px 3px rgb(53, 167, 104);
+            text-decoration: underline;text-decoration-color: purple;}
+        a:link {color: darkred;text-shadow:3px 3px 3px sandybrown;} /*利用虛擬選擇器對具有超連結的書籤進行css調整*/   
+        a:visited {color: slategray;}
+        a:hover {color: red;font-size: 24px;}
+        a:active{color:green;}
+        a:focus{color: yellow;}
+        :target {background-color: greenyellow;}
+        
+        ul#professtitle {list-style-type:square; list-style-position: outside;line-height: 1;}
+        li.profess {list-style-type: circle;list-style-position: inside;} /*對專業經歷內的項目更改其清單符號*/
+      
+        
+        </style>
+        <div class="container-fluid">
+        <h1 class=ssstart> Hello! Welcome to the guan-cheng web </h1>
+        <h2>國立交通大學 (電機學院) 生醫工程研究所(乙組)_生醫電子與光電</h2>
+            <h4 class="telemail"><img src="photo/信箱GIF.gif" height="40" width="40">
+            0919-553-731, gcd0815.cm07g@nctu.edu.tw, 役畢</h4>
+        </div>
+        <hr><!--水平隔線-->
+
+<nav> <!--導覽瀏覽器區塊，以書籤方式來進跳轉-->
+    <p><h3>
+<a href="#學歷">1. 學歷</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#工作經歷">2. 工作經歷</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#專長及技能">3. 專長及技能</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#證照">4. 證照</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    </h3></p>
+
+    <p><h3>
+<a href="#獲獎經歷">5. 獲獎經歷</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#專業經歷">6. 專業經歷</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#專案成就列表">7. 專案成就列表</a>
+<a href="#自傳">８. 自傳</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</h3></p>
+</nav>    
+    </header><!--網頁頁首區結束-->
+
+    <b><hr></b>
+
+    <section><!--學歷段落區域-->
+        <b><p><h3 id="學歷">學歷</h3></b></p>
+        <table border="1">
+        <tbody>
+            <tr><td><h3><img src=photo/1200px-NCTU_emblem.svg.png" height="40" width="40">&nbsp;&nbsp;&nbsp; 國立交通大學</h3></td><td>&nbsp;&nbsp;&nbsp;&nbsp;在學期間</td>
+            <td rowspan="2">
+                <div id="cover" class="coverflow">
+                    <a href="#"><img src="photo/交1.jpg" height="200" width="280"></a>
+                    <a href="#"><img src="photo/交2.jpg" height="200" width="280"></a>
+                    <a href="#"><img src="photo/交3.jpg" height="200" width="280"></a>
+                    <a href="#"><img src="photo/交4.jpg" height="200" width="280"></a>
+                    <a href="#"><img src="photo/交5.jpg" height="200" width="280"></a>
+                    <a href="#"><img src="photo/交6.jpg" height="200" width="280"></a>
+                    <a href="#"><img src="photo/交7.jpg" height="200" width="280"></a>
+                    <a href="#"><img src="photo/交8.jpg" height="200" width="280"></a>
+                </div>
+            <style>
+                div.coverflow {
+                    width: 280px;
+                    height:200px;
+                    position: relative;
+                }
+                div.coverflow>a{
+                    display: block;
+                    position: absolute;
+                    top:10%;
+                    left:0%;
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+                 -webkit-animation: silder 18s linear infinite;
+                 animation: silder 18s linear infinite;
+                }
+                /*.coverflow>a>img{
+                    max-width: 100%;
+                }
+                /*動畫關鍵影格*/
+                @-webkit-keyframes silder {
+                    3% {
+                        opacity: 1;
+                        filter: alpha(opacity=100);
+                    }
+                    27% {
+                        opacity: 1;
+                        filter: alpha(opacity=100);
+                    }
+                    30% {
+                        opacity: 0;
+                        filter: alpha(opacity=0);
+                    }
+                }
+                @keyframes silder {
+                    3% {
+                        opacity: 1;
+                        filter: alpha(opacity=100);
+                    }
+                    27% {
+                        opacity: 1;
+                        filter: alpha(opacity=100);
+                    }
+                    30% {
+                        opacity: 0;
+                        filter: alpha(opacity=0);
+                    }
+                }
+                /*每個圖片各延遲5秒*/
+                div.coverflow>a:nth-child(8) {
+                    -webkit-animation-delay: 14s;
+                            animation-delay: 14s;     
+                }
+                div.coverflow>a:nth-child(7) {
+                    -webkit-animation-delay: 12s;
+                            animation-delay: 12s;     
+                }
+                div.coverflow>a:nth-child(6) {
+                    -webkit-animation-delay: 10s;
+                            animation-delay: 10s;     
+                }
+                div.coverflow>a:nth-child(5) {
+                    -webkit-animation-delay: 8s;
+                            animation-delay: 8s;     
+                }
+                div.coverflow>a:nth-child(4) {
+                    -webkit-animation-delay: 6s;
+                            animation-delay: 6s;     
+                }
+                div.coverflow>a:nth-child(3) {
+                    -webkit-animation-delay: 4s;
+                            animation-delay: 4s;               
+                }
+                div.coverflow>a:nth-child(2) {
+                    -webkit-animation-delay: 2s;
+                            animation-delay: 2s;
+                }
+                div.coverflow>a:nth-child(1) {
+                    -webkit-animation-delay: 0s;
+                            animation-delay: 0s;    
+                }
+                /*滑入時停止播放*/
+                div.coverflow:hover>a{
+                -webkit-animation-play-state: paused;
+                        animation-play-state: paused;
+                }
+                </style>
+            </td></tr>
+            <tr><td><h4>生醫工程所_乙組 (生醫電子與光電) 電機學院 | 碩士畢業</h4></td><td>2018/9~2020/8</td></tr>
+            <tr><td><h3><img src="photo/ishou.jpeg" height="40" width="40">&nbsp;&nbsp;&nbsp;義守大學_醫學院</h3></td><td>&nbsp;&nbsp;&nbsp;&nbsp;在學期間</td>
+            <td rowspan="2">
+                <div id="isu" class="isuflow">
+                    <a href="#"><img src="photo/medical 47bfff3fe9b5ce82da271785866e338e.jpg" height="200" width="280"></a>
+                    <a href="#"><img src="photo/010.jpg" height="200" width="280"></a>
+                    <a href="#"><img src="photo/001.JPG" height="200" width="280"></a>
+                    <a href="#"><img src="photo/004.JPG" height="200" width="280"></a>
+                    <a href="#"><img src="photo/005.jpg" height="200" width="280"></a>
+                    <a href="#"><img src="photo/007.jpg" height="200" width="280"></a>
+                </div>
+            <style>
+                div.isuflow {
+                    width: 280px;
+                    height:200px;
+                    position: relative;
+                }
+                div.isuflow>a{
+                    display: block;
+                    position: absolute;
+                    top:0%;
+                    left:0%;
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+                 -webkit-animation: silder 14s linear infinite;
+                 animation: silder 14s linear infinite;
+                }
+                /*.coverflow>a>img{
+                    max-width: 100%;
+                }
+                /*動畫關鍵影格*/
+                @-webkit-keyframes silder {
+                    3% {
+                        opacity: 1;
+                        filter: alpha(opacity=100);
+                    }
+                    27% {
+                        opacity: 1;
+                        filter: alpha(opacity=100);
+                    }
+                    30% {
+                        opacity: 0;
+                        filter: alpha(opacity=0);
+                    }
+                }
+                @keyframes silder {
+                    3% {
+                        opacity: 1;
+                        filter: alpha(opacity=100);
+                    }
+                    27% {
+                        opacity: 1;
+                        filter: alpha(opacity=100);
+                    }
+                    30% {
+                        opacity: 0;
+                        filter: alpha(opacity=0);
+                    }
+                }
+                /*每個圖片各延遲5秒*/
+
+                div.isuflow>a:nth-child(6) {
+                    -webkit-animation-delay: 10s;
+                            animation-delay: 10s;
+                }
+                div.isuflow>a:nth-child(5) {
+                    -webkit-animation-delay: 8s;
+                            animation-delay: 8s;     
+                }
+                div.isuflow>a:nth-child(4) {
+                    -webkit-animation-delay: 6s;
+                            animation-delay: 6s;     
+                }
+                div.isuflow>a:nth-child(3) {
+                    -webkit-animation-delay: 4s;
+                            animation-delay: 4s;               
+                }
+                div.isuflow>a:nth-child(2) {
+                    -webkit-animation-delay: 2s;
+                            animation-delay: 2s;
+                }
+                div.isuflow>a:nth-child(1) {
+                    -webkit-animation-delay: 0s;
+                            animation-delay: 0s;    
+                }
+                /*滑入時停止播放*/
+                div.isuflow:hover>a{
+                -webkit-animation-play-state: paused;
+                        animation-play-state: paused;
+                }
+                </style>
+            </td></tr>
+            <tr><td><h4>生物醫學工程系 | 大學畢業</h4></td><td>2014/9~2018/6</td></tr>
+        </tbody>
+        </table>
+    </section>
+
+    <b><hr></b>
+
+    <section><!--工作經歷表格段落區-->
+        <b><p><h3 id="工作經歷">工作經歷</h3></b></p>
+        <table border="1">
+            <!-- <caption><b><p><h3 id="工作經歷">工作經歷</h3></b></p></caption>-->
+            <thead> <!--表頭-->
+                <tr><th><h4>單位</h4></th><th><h4>職稱/地點/工作內容</h4></th><th>總年資</th><th>活動剪影</th></tr><!--第一列-->
+            </thead>
+            <tbody> <!--表格本體-->
+                <tr><td><h4>聯詠科技</h4><a href="https://www.novatek.com.tw/zh-TW/Home/index" target="_blank">
+                    <img src="photo/novatek.jpeg" alt="logo 輸入錯誤" height="100" width="100"></a></td><!--第二列-->
+                <td>
+                <h4><b><img src="photo/371906220_TYPING_ON_LAPTOP_400px.gif" height="60" width="60">SP-SQA （軟體測試工程師） | 新竹市 </b></h4>
+                <h4><ol>
+工作內容:   
+<li>可以因應各項AI 的需求，需要建立對應的Dataset，用以加速各項AI 應用的開發 (python)。</li>
+    (詳細內容可以查看專案成就)
+<li>能撰寫shell script 進行系統管理及檔案操作。</li>
+<li>對數位電視系統，Test Plan執行與測試，針對發生問題進行操作流程定位。</li>
+<li>對顯示器系統，Test Plan執行與測試，針對發生問題進行操作流程定位及自動測試環境架設。</li>
+    (3.4點主要是利用Linux的語言對底層的log做存取，當測試發生問題時需要codedump或bug report時需要擷取底層的訊息回報給RD進行分析，燒機並復現問題。)
+<li>由jira上撰寫英文報告通知各上級主管回報狀況。</li></ol></h4></td>
+                <td>2019/8~2020/5<br>
+                    ９個月</td>
+                    <td>
+                        <div id="test" class="testflow">
+                            <a href="#"><img src="photo/outdoor novatek.jpg" height="220" width="280"></a>
+                            <a href="#"><img src="photo/indoor novatek.jpg" height="220" width="280"></a>
+                            <a href="#"><img src="photo/聯詠科技_證.jpg" height="220" width="280"></a>
+                            <a href="#"><img src="photo/testtest.jpg" height="220" width="280"></a>
+                            <a href="#"><img src="photo/netflixtest.jpg" height="220" width="280"></a>
+                        </div>
+                    <style>
+                        div.testflow {
+                            width: 280px;
+                            height:200px;
+                            position: relative;
+                        }
+                        div.testflow>a{
+                            display: block;
+                            position: absolute;
+                            top:0%;
+                            left:0%;
+                            opacity: 0;
+                            filter: alpha(opacity=0);
+                        /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+                         -webkit-animation: silder 12s linear infinite;
+                         animation: silder 12s linear infinite;
+                        }
+                        /*.coverflow>a>img{
+                            max-width: 100%;
+                        }
+                        /*動畫關鍵影格*/
+                        @-webkit-keyframes silder {
+                            3% {
+                                opacity: 1;
+                                filter: alpha(opacity=100);
+                            }
+                            27% {
+                                opacity: 1;
+                                filter: alpha(opacity=100);
+                            }
+                            30% {
+                                opacity: 0;
+                                filter: alpha(opacity=0);
+                            }
+                        }
+                        @keyframes silder {
+                            3% {
+                                opacity: 1;
+                                filter: alpha(opacity=100);
+                            }
+                            27% {
+                                opacity: 1;
+                                filter: alpha(opacity=100);
+                            }
+                            30% {
+                                opacity: 0;
+                                filter: alpha(opacity=0);
+                            }
+                        }
+                        /*每個圖片各延遲5秒*/
+
+
+                        div.testflow>a:nth-child(5) {
+                            -webkit-animation-delay: 8s;
+                                    animation-delay: 8s;     
+                        }
+                        div.testflow>a:nth-child(4) {
+                            -webkit-animation-delay: 6s;
+                                    animation-delay: 6s;     
+                        }
+                        div.testflow>a:nth-child(3) {
+                            -webkit-animation-delay: 4s;
+                                    animation-delay: 4s;               
+                        }
+                        div.testflow>a:nth-child(2) {
+                            -webkit-animation-delay: 2s;
+                                    animation-delay: 2s;
+                        }
+                        div.testflow>a:nth-child(1) {
+                            -webkit-animation-delay: 0s;
+                                    animation-delay: 0s;    
+                        }
+                        /*滑入時停止播放*/
+                        div.testflow:hover>a{
+                        -webkit-animation-play-state: paused;
+                                animation-play-state: paused;
+                        }
+                        </style>
+                    </td></tr><!--第二列結束-->
+
+                <tr><td><h4>高雄榮總</h4><a href="https://org.vghks.gov.tw/eng/Default.aspx?r=539361860">
+                    <img src="photo/kahosiung hos.jpeg" alt="logo 輸入錯誤" height="80" width="80"></a></td><!--第三列-->
+                <td>
+                <h4><b><img src="photo/371905140_ROBOT_WAVING_400px.gif" height="60" width="60">工務部_實習生 | 高雄市</b></h4>
+                    <h4><ol>
+工作內容:   
+<li>實習期間參與許多專業的醫療儀器教育訓練
+如電燒刀、內視鏡、超音波、X 光、MRI、CT、PET/CT、血液透析機、麻醉機、葉克膜、高壓氧艙、洗腎機及達文西手術機械手臂等,
+<li>在兩個多月的時間深入完成「EVITA 4 呼吸器氣路介紹及保養校驗之專題計畫」, 並向各大醫療廠商進行儀器報告介紹 (Philips, SIEMENS, GE), 
+並且能夠結合實際操作，並瞭解各式大型醫療器材原理結構及運作。</li>
+<li>在實習期間也到過 (Philips, SIEMENS, GE)，進行參訪及學習，</li></ol></h4></td>
+                        <td>2017/7~2017/9<br>
+                            2個月</td>
+                        <td>
+                            <div id="cover" class="coverflow">
+                                <a href="#"><img src="photo/高雄榮總.png" height="220" width="280"></a>
+                                <a href="#"><img src="photo/榮1.png" height="220" width="280"></a>
+                                <a href="#"><img src="photo/榮2.png" height="220" width="280"></a>
+                                <a href="#"><img src="photo/榮3.png" height="220" width="280"></a>
+                                <a href="#"><img src="photo/榮4.png" height="220" width="280"></a>
+                            </div>
+                        <style>
+                            div.coverflow {
+                                width: 280px;
+                                height:200px;
+                                position: relative;
+                            }
+                            div.coverflow>a{
+                                display: block;
+                                position: absolute;
+                                top:0%;
+                                left:0%;
+                                opacity: 0;
+                                filter: alpha(opacity=0);
+                            /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+                             -webkit-animation: silder 12s linear infinite;
+                             animation: silder 12s linear infinite;
+                            }
+                            /*.coverflow>a>img{
+                                max-width: 100%;
+                            }
+                            /*動畫關鍵影格*/
+                            @-webkit-keyframes silder {
+                                3% {
+                                    opacity: 1;
+                                    filter: alpha(opacity=100);
+                                }
+                                27% {
+                                    opacity: 1;
+                                    filter: alpha(opacity=100);
+                                }
+                                30% {
+                                    opacity: 0;
+                                    filter: alpha(opacity=0);
+                                }
+                            }
+                            @keyframes silder {
+                                3% {
+                                    opacity: 1;
+                                    filter: alpha(opacity=100);
+                                }
+                                27% {
+                                    opacity: 1;
+                                    filter: alpha(opacity=100);
+                                }
+                                30% {
+                                    opacity: 0;
+                                    filter: alpha(opacity=0);
+                                }
+                            }
+                            /*每個圖片各延遲5秒*/
+
+
+                            div.coverflow>a:nth-child(5) {
+                                -webkit-animation-delay: 8s;
+                                        animation-delay: 8s;     
+                            }
+                            div.coverflow>a:nth-child(4) {
+                                -webkit-animation-delay: 6s;
+                                        animation-delay: 6s;     
+                            }
+                            div.coverflow>a:nth-child(3) {
+                                -webkit-animation-delay: 4s;
+                                        animation-delay: 4s;               
+                            }
+                            div.coverflow>a:nth-child(2) {
+                                -webkit-animation-delay: 2s;
+                                        animation-delay: 2s;
+                            }
+                            div.coverflow>a:nth-child(1) {
+                                -webkit-animation-delay: 0s;
+                                        animation-delay: 0s;    
+                            }
+                            /*滑入時停止播放*/
+                            div.coverflow:hover>a{
+                            -webkit-animation-play-state: paused;
+                                    animation-play-state: paused;
+                            }
+                            </style>
+                        </td></tr><!--第三列結束--> 
+            </tbody>
+        </table>
+
+    </section><!--專長及技能段落區-->
+    <b><hr></b>
+    <section>
+        <p><b><h3 id="專長及技能">專長及技能</h3></b></p>
+        <ul>
+            <li>LabVIEW：可透過MyRIO架設接到PPG電路進行血壓的量測，並透過UI介面端進行波形輸出</li><br>
+            <li>C++：熟悉C++語法及各式運算</li><br>
+            <li>Matlab：藉由matlab強大的數學運算能力對大腦訊號進行處理及分析</li><br>
+            <li>Python：熟悉python語法及函式庫，並能透過CUDA和CuDNN結合GPU來進行深度學習的運算，
+                建構各式deep learning model，對大腦訊號進行分類</li><br>
+            <li>HTML:熟悉且能完整運用對網頁的內容和架構，能建構自己的網站</li><br>
+            <li>CSS:，熟悉各式語法及知識，能藉由構建好的HTML結合CSS對網頁進行排版與設計，並且可以進行響應式(RWD)網頁設計</li><br>
+            <li>Linux:可以透過基礎的語法以Shell script來自動管理作業系統</li><br>
+        </ul>
+    </section>
+
+    <b><hr></b>  
+
+    <section><!--證照段落區-->
+        <b><p><h3 id="證照">證照</h3></b></p>
+        <ul>
+            <li>國家考試院專門職業及技術人員外語領隊證照</li><br>
+            <li>劍橋大學國際商務英語能力測驗(BULATS) ALTE Level 2</li><br>
+            <li>GS1-EPCIE物聯網工程師</li><br>
+            <li>Microsoft Professional Program(MPP)-Artificial Intelligence</li><br>
+            <li>Microsoft Professional Program(MPP)-python to data science</li><br>
+            <li>Course Certification_機器學習基石上 (Machine Learning Foundations)--- Mathematical Foundations<br>
+                (National Taiwan University and offered through Coursera)
+            </li><br>
+            <li>Course Certification_Python for Machine Learning and Deep Learning<br>
+                (Kaggle competition and the other)<br>
+                TOPIC:ASHRAE-Great Energe Predictor III for the prize
+            </li><br>
+        </ul>
+    </section>
+
+    <b><hr></b>
+
+   <section><!--獲獎經歷段落區-->
+       <h3 id="獲獎經歷"><b>獲獎經歷 <em>(HONORS AND AWARDS)</em></b></h3>
+       <ul>
+           <li>交通大學生醫創意競賽_第二名</li><br>
+           <li>SPIE - The International Society for Optical Engineering 投稿發表 <br>Biomedical Imaging and Sensing Conference 2019, BISC 2019 - Yokohama, Japan
+            Duration: 22 Apr 2019 → 26 Apr 2019 <br> TOPIC: Study on the option of the optimal time length of measurement in resting-state fNIRS brain imaging</li><br>
+           <li>2017生物醫學工程科技研討會投稿發表 Duration:17 Nov → 18 Nov <br>TOPIC: Feasibility Assessment of Vascular Age by Using the Blood Pressure Slope in Diastolic Period </li><br>
+           <li>2017生物醫學工程專題製作成果壁報競賽榮獲最佳人氣獎</li><br>
+           <li>2017生物醫學工程專題製作成果壁報競賽榮獲成果優等獎</li><br>
+           <li>大義書卷獎學金第1名</li>
+       </ul>
+   </section>
+
+   <b><hr></b>  
+
+   <section><!--活動參與段落區-->
+    <h3 id="專業經歷"><b>專業經歷 <em>(PROFESSIONAL EXPERIENCE)</em></b></h3>
+<b><ul id="professtitle">Teaching Assistant, National Chiao Tung University, 2014-2015.</b>
+    <br>
+        <li class="profess">課程名稱:生醫創新設計與臨床需求<br>
+            ->協助課程協作及執行、作業批改
+        </li>
+    </ul>   
+
+<b><ul id="professtitle">Research item</b>
+        <li class="profess">106年大專學生研究計畫申請-利用簡易測量技術來開發血管年齡指標  (申請條碼:106CFD1300055)	</li><br>
+    </ul>
+    
+<b><ul id="professtitle">Research Assistant</b>
+        <li  class="profess">多功能無線貼片式近紅外光學組織檢測系統研發 - 以裘馨氏肌肉失養症之臨床應用切入研究(MOST 107-2221-E-009-015-MY3)<br>
+            ->硬體協作及軟體分析
+        </li>
+        <li class="profess">以非侵入性激發試驗來定量評估末梢微循環反應功能及其臨床運用(1/3)兼任研究助理 (MOST 105-2221-E-214-012-MY3)<br>
+            ->軟體分析(MATLAB, C)及臨床收案量測</li>
+        <li class="profess">無線可穿戴式關節醫療電子裝置研發與試驗(1/2) (MOST 105-2632-E-214-002)<br>
+            ->協助簡易硬體電路設計及軟體分析
+        </li>
+    </ul>
+</section>
+
+<hr>
+
+<section><!--專案成就列表段落區-->
+    <p>
+        <b><h3 id = "專案成就列表">專案成就列表</h3></b>
+    </p>
+ <p>
+     <h4 id="Python_web-crawler_stock">Python_web-crawler_stock series</h4>
+         <p><pre>專案介紹
+             本專案藉由Python網頁爬蟲透過整合selenium及beautifulsoup套件，實現查詢式的網頁資料爬取，對於想要進行大量資料的分析，能夠提升資料取得的效率，來實現自動化查詢的網頁爬蟲
+             台灣股市證卷交易所的股市為例</pre></p>
+     <p>下方為作品1->code_github所在網址</p><br>
+     <a href='https://github.com/DONG-GUAN-CHENG/Python_web-crawler_stock/blob/master/WebCrawler_Stock.py', 
+     target="_blank">guan cheng github_源代碼_作品1</a>
+     <br>
+     <br>
+     <a href='#top'>Return top</a>
+ </p>
+ <hr>
+ <p>
+     <h4 id="PWebCrawler-threading_photo">Python_WebCrawler-threading_photo series</h4> 
+         <p><pre>
+             Author:DONG GUAN-CHENG
+             
+             網路爬蟲解析圖片網站+多執行緒蒐集巨量資料_圖片
+             開發目的:因應 AI_dataset 快速建立，需要大量圖片輸入，藉由此專案開發能使大量的同類圖片下載，進而加速工作效率，
+             本專案將以圖片為例，透過網路爬蟲的方式，從網路上收集大量的資料，並結合平行化多執行緒來加速下載
+
+             下載圖片:使用 requests 儲存圖片
+
+             網路爬蟲:解析 HTML 網路原始碼
+
+             os模組:自動創建資料夾，將圖片分門別類的收藏
+
+             Threading模組:利用多執行緒來加速圖片下載
+
+             (P.S>現今大多數CPU都有硬體多執行緒技術，可以在同一時間執行多項任務，然而python編譯時會使用GIL(全域性直譯器)，
+             使其在同一時間只能運用其中一個執行緒來執行，而例如訪問網路、讀寫檔案屬於->I/O密集型任務，該特點為CPU消耗很少，任務的大部分時間都在等待I/O操作完成（因為IO的速度遠遠低於CPU和內存的速度)，故可藉由快速在不同任務中切換來達到多工的效果
+             這邊提到CPU密集型任務，也順便來補充一下，假如程式絕大多數時間在計算上，主要消耗CPU資源，只要花在任務切換的時間越多，CPU的效率就越低=>>取決於CPU的核心數</pre></p>
+     <p>下方為作品2->code_github所在網址</p><br>
+     <a href='https://github.com/DONG-GUAN-CHENG/WebCrawler-threading_photo', 
+     target="_blank">guan cheng github_源代碼_作品2</a>
+     <br>
+     <br>
+     <a href='#top'>Return top</a>
+ </p>
+</section>
+
+<b><hr></b> 
+
+   <section><!--自傳區段落區-->
+       <b><p><h3 id="自傳">自傳</h3></b></p>
+   </section>
+
+   <br>
+   <br>
+    <footer><!--網頁頁尾區-->
+        <address><small>有任何問題，歡迎與我聯繫<br>
+            <a href="Mailto:gcd0815.cm07g@nctu.edu.tw"><cite>信箱</cite></small></a>
+        </address>
+    </footer>
+</body>
+</html>
