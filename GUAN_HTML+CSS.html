@@ -9,13 +9,14 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</head>
+    <style>
+        #container1{width: 800;height:100%;display:flex; flex-direction:column;flex-wrap: wrap;} /*首先利用flexible_container進行網頁排版*/
+        header{width: 800;height:20%;background-color: peachpuff;}
+        nav{width: 800;height: 15%;background-color: lightgreen;}
+        article{width: 600; height:60%;background-color: skyblue;}
+        aside{width: 200;height: 60%;background-color: slateblue;}
+        footer{width: 800;height: 5%;background-color: palegoldenrod;}
 
-
-<body class="wbac"><!--本文區-->
-    <header>  <!-- 網頁頁首區_歡迎&個人聯繫資料及聯絡方式-->
-        <p id= "top">top</p>
-        <style>
         body{background-image: url(photo/whitebackground.jpg);background-repeat: round;background-size: contain;}
         .ssstart { /*利用class方式去對首頁標題進行css*/   
             color:darkturquoise;
@@ -39,8 +40,20 @@
         
         ul#professtitle {list-style-type:square; list-style-position: outside;line-height: 1;}
         li.profess {list-style-type: circle;list-style-position: inside;} /*對專業經歷內的項目更改其清單符號*/
-        </style>
 
+        #bighead {border: double 3px orangered;position: absolute; top: 20px;left: 600px;} /*設定大頭貼邊框用id*/
+
+        tr:nth-child(2n+1){background-color:lightpink;} /*對表格奇數行調整背景顏色_表格底色的設計*/
+        /*tr:nth-child(2n){background-color: antiquewhite;}對表格偶數行調整背景顏色*/
+
+        </style>
+</head>
+
+<body class="wbac"><!--本文區-->
+    <div id="=container1">
+
+    <header>  <!--網頁頁首區_歡迎&個人聯繫資料及聯絡方式-->
+        <p id= "top">top</p>
         <div class="container-fluid">
             <div class="row">
                 <div class="col";>
@@ -50,9 +63,9 @@
 
             <div class="row">
                 <div class="col">
-        <h4>國立交通大學 (電機學院) 生醫工程研究所(乙組)_生醫電子與光電 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="photo/imm大頭照.jpg" class="rounded-circle" ait="無法顯示" width="150" height="150"></h4>
+        <h4>國立交通大學 (電機學院) 生醫工程研究所(乙組)_生醫電子與光電 
+            <img id="bighead" src="photo/imm大頭照.jpg" 
+            class="rounded-circle" ait="無法顯示" width="200" height="200"></h4>
                 </div>
             </div>
 
@@ -63,34 +76,33 @@
                 </div>
             </div>
         </div>
-        <hr><!--水平隔線-->
+    </header><!--網頁頁首區塊結束-->
 
-<nav> <!--導覽瀏覽器區塊，以書籤方式來進跳轉-->
-    <p><h4>
-<a href="#學歷">1. 學歷</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="#工作經歷">2. 工作經歷</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="#專長及技能">3. 專長及技能</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="#證照">4. 證照</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    </h4></p>
+    <nav> <!--導覽瀏覽器區塊，以書籤方式來進跳轉-->
+            <p><h4>
+                <a href="#學歷">1. 學歷</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#工作經歷">2. 工作經歷</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#專長及技能">3. 專長及技能</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#證照">4. 證照</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </h4></p>
 
-    <p><h4>
-<a href="#獲獎經歷">5. 獲獎經歷</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="#專業經歷">6. 專業經歷</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="#專案成就列表">7. 專案成就列表</a>
-<a href="#自傳">８. 自傳</a>&nbsp;&nbsp;&nbsp;&nbsp;
-</h4></p>
-</nav>    
-    </header><!--網頁頁首區結束-->
+            <p><h4>
+                <a href="#獲獎經歷">5. 獲獎經歷</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#專業經歷">6. 專業經歷</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#專案成就列表">7. 專案成就列表</a>
+                <a href="#自傳">８. 自傳</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </h4></p>
+    </nav>    <!--導覽瀏覽器區塊結束-->
 
-    <b><hr></b>
+    <article><!--article區塊-->
 
     <section><!--學歷段落區域-->
         <b><p><h4 id="學歷">學歷</h4></b></p>
         <div class="container-fluid table-responsive table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl">
-        <table class="table table-striped table-bordered table-hover table-sm" border="1" >
+        <table class="table table-striped table-bordered table-hover table-sm" border="1">
         <tbody>
-            <tr><td><h4><img src="photo/1200px-NCTU_emblem.svg.png" height="40" width="40">&nbsp;&nbsp;&nbsp; 國立交通大學</h4></td><td>&nbsp;&nbsp;&nbsp;&nbsp;在學期間</td>
-            <td rowspan="2">
+            <tr><td><h4><img src="photo/1200px-NCTU_emblem.svg.png" height="40" width="40">&nbsp;&nbsp;&nbsp; 國立交通大學</h4></td><td><h5>&nbsp;&nbsp;&nbsp;&nbsp;在學期間</h5></td>
+                <td rowspan="2">
                 <div id="cover" class="coverflow">
                     <a href="#"><img src="photo/交1.jpg" height="200" width="280"></a>
                     <a href="#"><img src="photo/交2.jpg" height="200" width="280"></a>
@@ -191,7 +203,7 @@
                 </style>
             </td></tr>
             <tr><td><h5>生醫工程所_乙組 (生醫電子與光電) 電機學院 | 碩士畢業</h5></td><td>2018/9~2020/8</td></tr>
-            <tr><td><h4><img src="photo/ishou.jpeg" height="40" width="40">&nbsp;&nbsp;&nbsp;義守大學_醫學院</h4></td><td>&nbsp;&nbsp;&nbsp;&nbsp;在學期間</td>
+            <tr><td><h4><img src="photo/ishou.jpeg" height="40" width="40">&nbsp;&nbsp;&nbsp;義守大學_醫學院</h4></td><td><h5>&nbsp;&nbsp;&nbsp;&nbsp;在學期間</h5></td>
             <td rowspan="2">
                 <div id="isu" class="isuflow">
                     <a href="#"><img src="photo/medical 47bfff3fe9b5ce82da271785866e338e.jpg" height="200" width="280"></a>
@@ -307,7 +319,7 @@
                 <h5><b><img src="photo/371906220_TYPING_ON_LAPTOP_400px.gif" height="60" width="60">SP-SQA （軟體測試工程師） | 新竹市 </b></h5>
                 <ol>
 工作內容:   
-<li>可以因應各項AI 的需求，需要建立對應的Dataset，用以加速各項AI 應用的開發 (python)。</li>
+<li>可以因應各項AI 的需求，需要建立對應的Dataset，用以加速各項AI 應用的開發 (python)。</li>`
     (詳細內容可以查看專案成就)
 <li>能撰寫shell script 進行系統管理及檔案操作。</li>
 <li>對數位電視系統，Test Plan執行與測試，針對發生問題進行操作流程定位。</li>
@@ -518,8 +530,8 @@
             <li>Matlab：藉由matlab強大的數學運算能力對大腦訊號進行處理及分析</li><br>
             <li>Python：熟悉python語法及函式庫，並能透過CUDA和CuDNN結合GPU來進行深度學習的運算，
                 建構各式deep learning model，對大腦訊號進行分類</li><br>
-            <li>HTML:熟悉且能完整運用對網頁的內容和架構，能建構自己的網站</li><br>
-            <li>CSS:，熟悉各式語法及知識，能藉由構建好的HTML結合CSS對網頁進行排版與設計，並且可以進行響應式(RWD)網頁設計</li><br>
+            <li>HTML5:熟悉且能完整運用對網頁的內容和架構，能建構自己的網站</li><br>
+            <li>CSS3:，熟悉各式語法及知識，能藉由構建好的HTML結合CSS對網頁進行排版與設計，並且可以進行響應式(RWD)網頁設計</li><br>
             <li>Linux:可以透過基礎的語法以Shell script來自動管理作業系統</li><br>
         </ul>
     </section>
@@ -640,12 +652,14 @@
        <b><p><h4 id="自傳">自傳</h4></b></p>
    </section>
 
-   <br>
-   <br>
-    <footer><!--網頁頁尾區-->
+</article><!--article結束區域-->
+
+    <footer><!--網頁頁尾區塊-->
         <address><small>有任何問題，歡迎與我聯繫<br>
             <a href="Mailto:gcd0815.cm07g@nctu.edu.tw"><cite>信箱</cite></small></a>
         </address>
     </footer>
+
+</div>
 </body>
 </html>
