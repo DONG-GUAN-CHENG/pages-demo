@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8"> <!--正確顯示各國語言UTF-8 萬國碼-->
   <meta name="viewport" content="width=device-width ,initial-scale=1.0"> <!-- media Query 硬功夫打造RWD的前提-->
-	<title>guancheng_cv</title><!--網頁標題-->
+  <title>guancheng_cv</title><!--網頁標題-->
+    <!--匯入bootstrap 的 css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <!--JQuery的函式庫-->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <!--Popper JS 資源檔案的函數庫-->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <!--bootstrap 的 Javascript函數庫-->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <style>
     /*   全域設定border: 1px solid; */
     * {
@@ -20,13 +29,13 @@
       
       
       /* 版面及元素初步尺寸樣式設定 */
-      .wrap { /*可以看成是flex container*/
-        width: 100%;
+      .wrap { /*可以看成是flex container，用div包覆整個body區域，有包含header和footer*/
         margin: 0 auto;
       }
       
-      .content { /*左邊內容區塊定義為box-level*/
+      .content { /*整體內容區塊定義為box-level，整個內容區域，不包含header和footer-->*/
         display: flex;
+        flex: 100%;
       }
       
       .left { /*版面左邊占比及背景*/
@@ -38,8 +47,10 @@
         padding: 0 10px 20px 50px; /*版面左邊占比padding空白*/
       }
       
+
       .right { /*版面右邊占比*/
         flex: 70%;
+        width:90%;
         padding: 40px 20px 20px 20px;
       }
       
@@ -56,7 +67,12 @@
         background-position: 0 bottom;
         padding:10px 0 50px;
       }
-      
+
+      .header_itemrow1{margin-bottom: 15px;}
+      div.header_itemrow1>a{margin:20px}
+      .header_itemrow2{margin-bottom: 15px;}
+      .header_itemrow2>a{margin:20px}
+
       /*導覽器區塊設定*/
         a:link {color: whitesmoke;text-shadow:3px 3px 3px sandybrown;} /*利用虛擬選擇器的動作虛擬類別對具有超連結的書籤進行css調整，有順序之分link和visit優先*/   
         a:visited {color: slategray;}
@@ -70,7 +86,8 @@
         margin-bottom: 50px;
         }
 
-        h4>a{margin: 0 20px;} /*超連結指標間格*/
+        h4>a{margin: 20px ;
+        } /*超連結指標間格*/
 
       .header h3 { 
         font-size: 40px;
@@ -424,7 +441,7 @@
         }
 
       .education ul>li { /*margin top前空白*/
-        display: flex; /*整個區塊宣告為block level，兩個學歷區塊的間格調整*/
+        display: flex; /*整個區塊宣告為block level，兩個學歷區塊的間格調整，第一學歷區塊和第二學歷區塊*/
         margin-top: 20px;
         margin-bottom: 40px;
       }
@@ -650,17 +667,6 @@
         border: none;
         margin: 0;
       }/*教育區塊css結束*/
-      
-      
-      @media screen and (max-width: 1000px){
-        .coverflow{
-        width: 100%;
-        display:flex;
-        flex-direction: column;}
-
-      }
-
-
 
     /*software技能*/
     .software{
@@ -864,7 +870,7 @@
       font-family: 'Times New Roman', Times, serif,'標楷體';
       background: url(photo/logolab1.png) no-repeat ;
       background-size: contain;
-      background-position: center;}
+      background-position: center;  }
       p.professtitle{ /*各分項標題*/
       font-weight: bold;
       margin-bottom: 10px;
@@ -886,38 +892,65 @@
         width: 16%;
       }
       
+      @media screen and (max-width: 450px){ /*設定手機RWD解析度調整*/
+        div.left{flex: 100%;}
+        div.right{flex: 100%;}
+        .content{flex-direction: column;}
+        .header_itemrow1{margin-bottom: 15px;}
+        div.header_itemrow1>a{margin: 5px;}
+        .header_itemrow2{margin-bottom: 15px;}
+        div.header_itemrow2>a{margin: 2px;}
+        div.coverflow img{
+        flex-direction: column;
+        flex: block;
+        width: 100%;}
+        div.isuflow img{
+        flex-direction: column;
+        flex: flex;
+        width: 100%;}
+      }
       
       
       </style>
+      <script>
+      
+
+
+
+      </script>
 </head>
+
 <body><!--body開始區塊-->
 
-<header>  <!--網頁頁首區_歡迎&個人聯繫資料及聯絡方式-->
+
 <div class="wrap"> <!--最大型的container包住整個body-->
+
+<header>  <!--網頁頁首區_歡迎&個人聯繫資料及聯絡方式-->
   <div class="header"> <!--標題上方區塊-->
     <nav> <!--導覽瀏覽器區塊，以書籤方式來進跳轉-->
       <h4>
-          <a href="#學歷">學歷</a></button>
+          <div class="header_itemrow1">
+          <a href="#學歷">學歷</a>
           <a href="#工作經歷">工作經歷</a>
           <a href="#專長及技能">專長及技能</a>
-          <a href="#證照">證照</a>
+          <a href="#證照">證照</a></div>
+          <div class="header_itemrow2">
           <a href="#獲獎經歷">獲獎經歷</a>
-          <a href="#專業經歷">專業經歷</a>
+          <a href="#專業經歷">專業經歷</a> 
           <a href="#專案成就列表">專案成就列表</a>
-          <a href="#自傳">自傳</a>
+          <a href="#自傳">自傳</a></div>
       </h4>
   </nav>    <!--導覽瀏覽器區塊結束-->
 
     <h3>NCTU</h3>
     <h1>Guan-Cheng Dong</h1>
     <h2>Biomedical Electronics and Optoelectronics</h2>
-
-</div><!--標題上方區塊結束-->
+  </div><!--標題上方區塊結束-->
 </header><!--網頁頁首區塊結束-->
 
 <article><!--article區塊-->
-  <div class="content"> <!--左邊個人資料區-->
-    <div class="left">
+  <div class="content"> <!--整個內容區域，不包含header和footer-->
+    <div class="left"> <!--左邊個人資料區-->
       <div class="profilePic"></div> <!--大頭照區塊-->
 
       <div class="personal">
@@ -1009,7 +1042,8 @@
           </tr>
         </table>
       </div>
-    </div>
+
+    </div> <!--左邊left個人區塊結束-->
 
     <div class="right">
       <!--
@@ -1064,6 +1098,7 @@
           <h2>EDUCATION</h2>
 
           <ul>
+
             <li><!--第一段落交大學歷區塊-->
               <img src="https://eunice.ecc.tw/wp-content/uploads/sites/217/2019/03/cropped-mortarboard-192x192.png"
               width="40" height="40"><span>master</span>
@@ -1075,12 +1110,13 @@
                   <p>National Chiao Tung University<br>
                   Institute of Biomedical Electronics and Optoelectronics (BME)</p>
                 </li>
+              </ul>
               
                     <div class="coverflow" >
                       <div>
                           <img src="photo/交1.jpg" alt="pure css3 slider" height="240" width="300"/>
                       </div>
-                      <div>
+                      <div>               
                           <img src="photo/交2.jpg" alt="pure css3 slider" height="240" width="300"/>
                       </div>
                       <div>
@@ -1102,7 +1138,6 @@
                           <img src="photo/交8.jpg" alt="pure css3 slider" height="240" width="300"/>
                       </div>
                     </div>
-              </ul>
             </li>   <!--第一段落交大學歷區塊切割結束-->
             
 
@@ -1116,8 +1151,8 @@
                     height="50" width="50"></p>
                   <p class="pppp">I-Shou University (medical school)<br>
                     Department of Biomedical Engineering</p>
-                  </li>
-              </ul>  
+                    </li>
+              </ul>
                     <div class="isuflow">
                       <div>
                           <img src="photo/medical 47bfff3fe9b5ce82da271785866e338e.jpg" alt="pure css3 slider" height="240" width="300"/>
@@ -1139,6 +1174,7 @@
                       </div>
                     </div>
             </li> <!--第二段落義大學歷區塊結束-->
+
           </ul>
         </div><!--學歷區塊結束-->
 
@@ -1272,9 +1308,16 @@
           <li>
             Linux
             <div class="bar">
-              <div class="p60"></div>
+              <div class="p40"></div>
             </div>
             可以透過基礎的語法以Shell script來自動管理作業系統
+          </li>
+          <li>
+            JavaScript
+            <div class="bar">
+              <div class="p60"></div>
+            </div>
+            熟悉JS基礎知識、函數、陣列，並能以所建構的個人網頁中，更進階的設計互動式的網頁
           </li>
         </ul>
     </div>
@@ -1444,9 +1487,10 @@
             <p>baseball</p>
           </li>
         </ul>
-    </div>
-  </div>  
-  </div>
+    </div><!--hobbies區塊結束-->
+
+  </div>  <!--右邊right區塊結束-->
+  </div> <!--整個內容區content區塊結束-->
 </article>
 
   <div class="footer"><!--網頁頁尾區塊-->
@@ -1458,6 +1502,7 @@
   </div><!--網頁頁尾結束區塊-->
   
 </div><!--最大型的container包住整個body的結束-->
+
 </body><!--body結束區塊-->
 
 </html>
