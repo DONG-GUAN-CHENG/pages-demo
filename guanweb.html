@@ -7,6 +7,7 @@
     <!--匯入bootstrap 的 css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" id="oew-skillbar-css" href="https://eunice.ecc.tw/wp-content/plugins/ocean-elementor-widgets/assets/css/skillbar/style.min.css?ver=5.5.3" type="text/css" media="all">
       <!--JQuery的函式庫-->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <!--Popper JS 資源檔案的函數庫-->
@@ -24,7 +25,7 @@
         margin: 0;
         padding: 0;
         font-family: 'Merriweather','標楷體', 'serif';
-        box-sizing: border-box;
+        box-sizing: content-box;
       }
       
       
@@ -50,7 +51,6 @@
 
       .right { /*版面右邊占比*/
         flex: 70%;
-        width:90%;
         padding: 40px 20px 20px 20px;
       }
       
@@ -677,106 +677,156 @@
 
       .software ul li {
         display: inline-block;
-        width: 49%;
-        padding: 10px 0px;
+        width: 46%;
+        padding: 8px 0px;
+        margin-left: 1%;
+        margin-right: 1%;
       }
       
       .software .bar { /*設定bar的長寬*/
         width: 250px;
         height: 15px;
-        background-color: #ededed;
+        background-color: white;
         margin-top: 5px;
+        border-radius: 30px;
       }
       
       .software .bar .p10 {
         width: 10%;
         height: 100%;
         background-color: #3d3838;
+        border-radius: 30px;
+        background-image: linear-gradient(-45deg, purple 25%, 
+        transparent 25%, transparent 50%,greenyellow 50%, plum , transparent 75%, transparent);
+        background-size: 24px 24px;
       }
       
       .software .bar .p20 {
         width: 20%;
         height: 100%;
         background-color: #3d3838;
+        border-radius: 30px;
+        background-image: linear-gradient(-45deg, purple 25%, 
+        transparent 25%, transparent 50%,greenyellow 50%,plum  75%, transparent 75%, transparent);
+        background-size: 24px 24px;
       }
       
       .software .bar .p30 {
         width: 30%;
         height: 100%;
         background-color: #3d3838;
+        border-radius: 30px;
+        background-image: linear-gradient(-45deg, purple 25%, 
+        transparent 25%, transparent 50%,greenyellow 50%, plum 75%, transparent 75%, transparent);
+        background-size: 24px 24px;
       }
       
       .software .bar .p40 {
         width: 40%;
         height: 100%;
         background-color: #3d3838;
+        border-radius: 30px;
+        background-image: linear-gradient(-45deg, purple 25%, 
+        transparent 25%, transparent 50%,greenyellow 50%, plum 75%, transparent 75%, transparent);
+        background-size: 24px 24px;
       }
       
       .software .bar .p50 {
         width: 50%;
         height: 100%;
         background-color: #3d3838;
+        border-radius: 30px;
+        background-image: linear-gradient(-45deg, purple 25%, 
+        transparent 25%, transparent 50%,greenyellow 50%, plum  75%, transparent 75%, transparent);
+        background-size: 24px 24px;
       }
       
       .software .bar .p60 {
         width: 60%;
         height: 100%;
         background-color: #3d3838;
+        border-radius: 30px;
+        background-image: linear-gradient(-45deg, purple 25%, 
+        transparent 25%, transparent 50%,greenyellow 50%, plum  75%, transparent 75%, transparent);
+        background-size: 24px 24px;
       }
       
       .software .bar .p70 {
         width: 70%;
         height: 100%;
         background-color: #3d3838;
+        border-radius: 30px;
+        background-image: linear-gradient(-45deg, purple 25%, 
+        transparent 25%, transparent 50%,greenyellow 50%, plum  75%, transparent 75%, transparent);
+        background-size: 24px 24px;
       }
       
       .software .bar .p80 {
         width: 80%;
         height: 100%;
         background-color: #3d3838;
+        border-radius: 30px;
+        background-image: linear-gradient(-45deg, purple 25%, 
+        transparent 25%, transparent 50%,greenyellow 50%, plum  75%, transparent 75%, transparent);
+        background-size: 24px 24px;
       }
       
       .software .bar .p90 {
         width: 90%;
         height: 100%;
         background-color: #3d3838;
+        border-radius: 30px;
+        background-image: linear-gradient(-45deg, purple 25%, 
+        transparent 25%, transparent 50%,greenyellow 50%, plum 75%, transparent 75%, transparent);
+        background-size: 24px 24px;
       }
       
       .software .bar .p100 {
         width: 100%;
         height: 100%;
         background-color: #3d3838;
-      }  /*software結束*/
+        border-radius: 30px;
+        background-image: linear-gradient(-45deg, purple 25%, 
+        transparent 25%, transparent 50%,greenyellow 50%, plum 75%, transparent 75%, transparent);
+        background-size: 24px 24px;
+      }  
+
+      .software h4 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-style: italic;
+        text-shadow: 3px 3px 3px darkturquoise;
+      }
+      /*software結束*/
       
       /*cetification區塊*/
-      .ceitem{
+      .ceitem{       /*cetification大區塊包含1,2區塊*/
       display: flex;
       width: 100%;
-      flex-direction: row;
       background: radial-gradient(ellipse farthest-side, lightyellow, lightblue);
-      } /*cetification大區塊包含1,2區塊*/
+      } 
 
-      .ceitem ul li {  /*cetification內容項目區塊1*/
-        display:inline-flex;
-        flex-direction: column;
-        width: 75%;
+      .cecontent {  /*cetification內容項目區塊1*/
+        display:flex;
+        width: 100%;
         padding: 10px 0px;
         font-family: 'Times New Roman', Times, serif,'標楷體';
       }
 
       .certicateflow {  /*證照css圖片輪播區塊2*/ 
-                    width: 40%;
-                    height:200px;
+                    height:300px;
                     position: relative;   
-                    display: inline-flex;              
+                    display: flex; 
+                    flex-wrap: wrap;        
                 }
                 .certicateflow div{
                     border-style: groove;
                     border-color: saddlebrown;
                     border-width: medium;
                     position: absolute;
-                    top:10%;
-                    right:40%;
+                    top:-96%;
+                    right:-60%;
                     opacity: 0;
                     filter: alpha(opacity=0);
                 /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
@@ -847,21 +897,100 @@
       /*cetification區塊結束*/
 
       /*HONOR區塊*/
-      .hr{
+      .hritem{ /*HONOR 大區塊包含1,2區塊*/
+      display: flex;
+        display: flex;
+        width: 100%;
         background: url(photo/hrdback.png) no-repeat;
         background-size: cover;
               }
 
-      .hr{display: flex;width: 100%; flex-direction: row;} /*cetification大區塊包含1,2區塊*/
-
-      .hr ul li {  /*cetification內容項目區塊1*/
-        display:inline-flex;
-        flex-direction: column;
-        width: 75%;
+      .hr{ /*HONOR 內容項目區塊1*/
+        display: flex;width: 100%; flex-direction: row;
         padding: 10px 0px;
         font-family: 'Times New Roman', Times, serif,'標楷體';
-      }
-      /*輪播跟證照區一樣 class=certicateflow */
+        } /*cetification大區塊包含1,2區塊*/
+
+      /*輪播跟證照區一樣 class=hrflow */
+      .hrflow {  /*HONOR css圖片輪播區塊2*/ 
+                    height:300px;
+                    position: relative;   
+                    display: flex; 
+                    flex-wrap: wrap;        
+                }
+                .hrflow div{
+                    border-style: groove;
+                    border-color: saddlebrown;
+                    border-width: medium;
+                    position: absolute;
+                    top:-106%;
+                    right:-60%;
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+                 -webkit-animation: hrsilder 24s linear infinite;
+                 animation: hrsilder 24s linear infinite;
+                }
+                /*動畫關鍵影格*/
+                @-webkit-keyframes hrsilder {
+                    4.166% {
+                        opacity: 1;
+                        filter: alpha(opacity=100);
+                    }
+                    16.66% {
+                        opacity: 1;
+                        filter: alpha(opacity=100);
+                    }
+                    20.826% {
+                        opacity: 0;
+                        filter: alpha(opacity=0);
+                    }
+                }
+                @keyframes hrsilder {
+                    4.166% {
+                        opacity: 1;
+                        filter: alpha(opacity=100);
+                    }
+                    16.66% {
+                        opacity: 1;
+                        filter: alpha(opacity=100);
+                    }
+                    20.826% {
+                        opacity: 0;
+                        filter: alpha(opacity=0);
+                    }
+                }
+                /*每個圖片各延遲5秒*/
+
+                div.hrflow div:nth-child(6) {
+                    -webkit-animation-delay: 20s;
+                            animation-delay: 20s;
+                }
+                div.hrflow div:nth-child(5) {
+                    -webkit-animation-delay: 16s;
+                            animation-delay: 16s;     
+                }
+                div.hrflow div:nth-child(4) {
+                    -webkit-animation-delay: 12s;
+                            animation-delay: 12s;     
+                }
+                div.hrflow div:nth-child(3) {
+                    -webkit-animation-delay: 8s;
+                            animation-delay: 8s;               
+                }
+                div.hrflow div:nth-child(2) {
+                    -webkit-animation-delay: 4s;
+                            animation-delay: 4s;
+                }
+                div.hrflow div:nth-child(1) {
+                    -webkit-animation-delay: 0s;
+                            animation-delay: 0s;    
+                }
+                /*滑入時停止播放*/
+                div.hrflow:hover div{
+                -webkit-animation-play-state: paused;
+                        animation-play-state: paused;
+                } /*HONOR css圖片輪播區結束*/ 
       /*HONOR區塊結束*/
 
       /*專業經歷(PROFESSIONAL EXPERIENCE)區塊*/
@@ -893,17 +1022,99 @@
         width: 16%;
       }
       
-      @media screen and (max-width: 450px){ /*設定手機RWD解析度調整*/
-        div.left{flex: 100%;}
+      @media screen and (max-width: 576px){ /*設定手機RWD解析度調整 411 414 375*/ 
+        *, ::after, ::before {
+        box-sizing: content-box;}
+        div.left{flex: 100%;} /*調整左右兩邊排版*/
         div.right{flex: 100%;}
-        .content{flex-direction: column;}
-        .header_itemrow1{margin-bottom: 15px;}
+
+        .content{flex-direction: column;} /*調整排列方向*/
+
+        .header_itemrow1{margin-bottom: 15px;} /*header 頁首區書籤排版大小*/
         div.header_itemrow1>a{margin: 3px;}
         .header_itemrow2{margin-bottom: 15px;}
         div.header_itemrow2>a{margin: 1px;}
+
+        .software ul li {  /*software排版*/
+
+        padding: 8px 0px;
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 100%;}
+
+      .certicateflow div{ /*證照排版*/
+                    top:6%;
+                    right:-90%;
+                    }
+      .hrflow div{ /*HONOR 排版*/
+                    top:6%;
+                    right:3%;}
+                    }
+
+      @media screen and (max-width: 768px){ /*設定平板RWD解析度調整 ipad 768 */ 
+        *, ::after, ::before {
+        box-sizing: content-box;}
+        .header_itemrow1{margin-bottom: 15px;} /*header 頁首區書籤排版大小*/
+        div.header_itemrow1>a{margin: 3px;}
+        .header_itemrow2{margin-bottom: 15px;}
+        div.header_itemrow2>a{margin: 1px;}
+
+      .certicateflow {  /*證照css圖片輪播區塊2*/ 
+                    height:350px;}
+
+      .certicateflow div{ /*證照排版*/
+                    top:6%;
+                    right:8%;
       }
+      .hrflow {  /*HONOR css圖片輪播區塊2*/ 
+                    height:350px;}
+
+      .hrflow div{ /*HONOR 排版*/
+                    top:6%;
+                    right:8%;
+      }}
+
+      @media screen and (max-width: 1024px){ /*設定大平板RWD解析度調整 ipad pro 1024 */ 
+        *, ::after, ::before {
+        box-sizing: content-box;}
+        .header_itemrow1{margin-bottom: 15px;} /*header 頁首區書籤排版大小*/
+        div.header_itemrow1>a{margin: 3px;}
+        .header_itemrow2{margin-bottom: 15px;}
+        div.header_itemrow2>a{margin: 1px;}
+
+      .certicateflow {  /*證照css圖片輪播區塊2*/ 
+                    height:330px;}
+
+
+      .certicateflow div{ /*證照排版*/
+                    top:10%;
+                    right:22%;}
       
-      
+      .hrflow {  /*HONOR css圖片輪播區塊2*/ 
+                    height:330px;}                    
+
+      .hrflow div{ /*HONOR 排版*/
+                    top:6%;
+                    right:24%;
+      }}
+
+      @media screen and (min-width: 1200px){ /*設定大平板RWD解析度調整 ipad pro 1024 */ 
+        *, ::after, ::before {
+        box-sizing: content-box;}
+        
+        .certicateflow {  /*證照css圖片輪播區塊2*/ 
+                    height:30px;}
+        
+        .certicateflow div{ /*證照排版*/
+                    top:-950%;
+                    right:-60%;}
+
+        .hrflow {  /*HONOR css圖片輪播區塊2*/ 
+                    height:30px;}   
+        .hrflow div{ /*HONOR 排版*/
+                    top:-950%;
+                    right:-50%;}
+        }
       </style>
       <script>
       
@@ -1130,7 +1341,7 @@
                           <img src="photo/交8.jpg" alt="pure css3 slider" height="240" width="300"/>
                       </div>
                     </div>
-                </li>
+                  </li>
               </ul>
             </li>   <!--第一段落交大學歷區塊切割結束-->
             
@@ -1166,7 +1377,7 @@
                           <img src="photo/007.jpg" alt="pure css3 slider" height="240" width="300"/>
                       </div>
                     </div>
-                </li>
+                  </li>
               </ul>
             </li> <!--第二段落義大學歷區塊結束-->
 
@@ -1258,42 +1469,42 @@
         <h2>SOFTWARE</h2>
         <ul>
           <li>
-            html
+            <h4>HTML5</h4>
             <div class="bar">
               <div class="p100"></div>
             </div>
             熟悉且能完整運用對網頁的內容和架構，能建構自己的網站
           </li>
           <li>
-            CSS
+            <h4>CSS3</h4>
             <div class="bar">
               <div class="p90"></div>
             </div>
             熟悉各式語法及知識，能藉由構建好的HTML結合CSS對網頁進行排版與設計，並且可以進行響應式(RWD)網頁設計
           </li>
           <li>
-            LabVIEW
+            <h4>LabVIEW</h4>
             <div class="bar">
               <div class="p70"></div>
             </div>
             可透過MyRIO架設接到PPG電路進行血壓的量測，並透過UI介面端進行波形輸出
           </li>
           <li>
-            C++
+            <h4>C++</h4>
             <div class="bar">
               <div class="p60"></div>
             </div>
             熟悉C++語法及各式運算
           </li>
           <li>
-            Matlab
+            <h4>Matlab</h4>
             <div class="bar">
               <div class="p50"></div>
             </div>
             藉由matlab強大的數學運算能力對大腦訊號進行處理及分析
           </li>
           <li>
-            Python
+            <h4>Python</h4>
             <div class="bar">
               <div class="p60"></div>
             </div>
@@ -1301,14 +1512,14 @@
                 建構各式deep learning model，對大腦訊號進行分類
           </li>
           <li>
-            Linux
+            <h4>Linux</h4>
             <div class="bar">
               <div class="p40"></div>
             </div>
             可以透過基礎的語法以Shell script來自動管理作業系統
           </li>
           <li>
-            JavaScript
+            <h4>JavaScript</h4>
             <div class="bar">
               <div class="p60"></div>
             </div>
@@ -1319,6 +1530,7 @@
 
     <h2 id="證照">證照</h2> <!--證照區塊-->
     <div class="ceitem">
+      <div class="cecontent">
       <ul>
           <li>國家考試院專門職業及技術人員外語領隊證照</li><br>
           <li>劍橋大學國際商務英語能力測驗(BULATS) ALTE Level 2</li><br>
@@ -1332,65 +1544,69 @@
               (Kaggle competition and the other)<br>
               TOPIC:ASHRAE-Great Energe Predictor III for the prize
           </li>
-      </ul>
+      
       <div class="certicateflow">
         <div>
-            <img src="photo/AI Certificate.png" alt="pure css3 slider" height="240" width="300"/>
+            <img src="證書/AI Certificate.png" alt="pure css3 slider" height="240" width="300"/>
         </div>
         <div>
-            <img src="photo/data_science Certificate.png" alt="pure css3 slider" height="240" width="300"/>
+            <img src="證書/data_science Certificate.png" alt="pure css3 slider" height="240" width="300"/>
         </div>
         <div>
-            <img src="photo/machine learning .png" alt="pure css3 slider" height="240" width="300"/>
+            <img src="證書/machine learning .png" alt="pure css3 slider" height="240" width="300"/>
         </div>
         <div>
-            <img src="photo/deep learning and ML.png" alt="pure css3 slider" height="300" width="300"/>
+            <img src="證書/deep learning and ML.png" alt="pure css3 slider" height="300" width="300"/>
         </div>
         <div>
-            <img src="photo/leader.png" alt="pure css3 slider" height="300" width="300"/>
+            <img src="證書/leader.png" alt="pure css3 slider" height="300" width="300"/>
         </div>
         <div>
-            <img src="photo/bulats.png" alt="pure css3 slider" height="300" width="300"/>
+            <img src="證書/bulats.png" alt="pure css3 slider" height="300" width="300"/>
         </div>
+      </div>
+    </ul>
       </div>
     </div><!--證照區塊結束-->
 
 
 <!--獲獎經歷區塊-->
     <h2 id="獲獎經歷">獲獎經歷 (HONORS AND AWARDS)</h2>
+    <div class="hritem">
     <div class="hr">
       <ul>
           <li>交通大學生醫創意競賽_第二名</li><br>
-          <li>SPIE - The International Society for Optical Engineering 投稿發表 <br>Biomedical Imaging and Sensing Conference 2019, BISC 2019 - Yokohama, Japan
+          <li>SPIE - The International Society for Optical Engineering 投稿發表 <br>Biomedical Imaging and Sensing Conference 2019, BISC 2019 - Yokohama, Japan<br>
            Duration: 22 Apr 2019 → 26 Apr 2019 <br> TOPIC: Study on the option of the optimal time length of measurement in resting-state fNIRS brain imaging</li><br>
           <li>2017生物醫學工程科技研討會投稿發表 Duration:17 Nov → 18 Nov <br>TOPIC: Feasibility Assessment of Vascular Age by Using the Blood Pressure Slope in Diastolic Period </li><br>
           <li>2017生物醫學工程專題製作成果壁報競賽榮獲最佳人氣獎</li><br>
           <li>2017生物醫學工程專題製作成果壁報競賽榮獲成果優等獎</li><br>
           <li>大義書卷獎學金第1名</li>
-      </ul>
+      
    
-      <div class="certicateflow">
+      <div class="hrflow">
        <div>
-           <img src="photo/海報合照橫濱.jpg" alt="pure css3 slider" height="320" width="300"/>
+           <img src="獲獎經歷/海報合照橫濱.jpg" alt="pure css3 slider" height="320" width="300"/>
        </div>
        <div>
-           <img src="photo/橫濱發表.jpg" alt="pure css3 slider" height="320" width="280"/>
+           <img src="獲獎經歷/橫濱發表.jpg" alt="pure css3 slider" height="320" width="280"/>
        </div>
        <div>
-           <img src="photo/交大生醫創意競賽獎狀.png" alt="pure css3 slider" height="300" width="300"/>
+           <img src="獲獎經歷/交大生醫創意競賽獎狀.png" alt="pure css3 slider" height="300" width="300"/>
        </div>
        <div>
-           <img src="photo/大義書卷獎.png" alt="pure css3 slider" height="300" width="300"/>
+           <img src="獲獎經歷/大義書卷獎.png" alt="pure css3 slider" height="300" width="300"/>
        </div>
        <div>
-           <img src="photo/專題最佳人氣獎.png" alt="pure css3 slider" height="320" width="300"/>
+           <img src="獲獎經歷/專題最佳人氣獎.png" alt="pure css3 slider" height="320" width="300"/>
        </div>
        <div>
-           <img src="photo/專題成果優等.png" alt="pure css3 slider" height="320" width="300"/>
+           <img src="獲獎經歷/專題成果優等.png" alt="pure css3 slider" height="320" width="300"/>
        </div>
       </div>
+    </ul>
+    </div>
     </div><!--獲獎經歷區塊結束-->
-
 
     <!--專業經歷(PROFESSIONAL EXPERIENCE)區塊-->
     <h2 id="專業經歷">專業經歷 (PROFESSIONAL EXPERIENCE)</h2>
@@ -1421,7 +1637,7 @@
 
 
      <!--專案成就列表區塊-->
-     <h2 id = "專案成就">專案成就</h2>
+     <h2 id = "專案成就">專案成就列表</h2>
     <div class="prolist_div">
        <h4 id="Python_web-crawler_stock">Python_web-crawler_stock series</h4>
            <b><p class="text-danger">專案介紹:</p></b>
