@@ -43,14 +43,14 @@ ex:`![NCTU](https://github.com/DONG-GUAN-CHENG/pages-demo/blob/master/photo/交7
 連接本倉庫URL:  
 `ex:[](/aa/bb.md)`
 ***
-#### 列表
+#### 列表  
 無序列表  
-語法:  
-`* 董貫程`
-`- 英文名：Bill`
-效果
-* 董貫程
-- 英文名：Bill
+語法:   
+`* 董貫程`  
+`- 英文名：Bill`  
+效果  
+* 董貫程  
+- 英文名：Bill  
 多级無序列表
 语法
 * 编程语言
