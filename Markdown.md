@@ -33,4 +33,4 @@ title表示鼠標懸停在圖片時的替代文本（要加引號）
 URl及為圖片的地址，要用倉庫中的圖片，直接使用`相對路徑`即可，如果要引用其他github倉庫中的圖片要注意格式，  
 即 `倉庫地址/raw/master/資料夾/圖片名稱(路徑)`   
 ex:`![NCTU](https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif "交通大學")`
-![NCTU](https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif "交通大學")
+![NCTU](https://github.com/DONG-GUAN-CHENG/pages-demo/tree/master/photo/005.jpg "交通大學")
