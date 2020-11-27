@@ -26,7 +26,7 @@
 `***~~斜粗體刪除線1~~***`	~~***斜粗體刪除線1~~***    
 `~~***斜粗體刪除線2***~~`	~~***斜粗體刪除線2***~~    
 #### 圖片
-基本格式:![alt](URL title)  
+基本格式:`![alt](URL title)`
 alt和title可對應到HTML中的alt和title屬性（都可省略）：
 alt表示圖片顯示失敗時的替代文本
 title表示鼠標懸停在圖片時的替代文本（要加引號）
@@ -34,3 +34,6 @@ URl及為圖片的地址，要用倉庫中的圖片，直接使用`相對路徑`
 即 `倉庫地址/raw(每個人倉庫名稱不一樣)/master/資料夾/圖片名稱(路徑)`  
 ex:`![NCTU](https://github.com/DONG-GUAN-CHENG/pages-demo/blob/master/photo/交7.jpg "交通大學")`
 ![NCTU](https://github.com/DONG-GUAN-CHENG/pages-demo/blob/master/photo/交7.jpg "交通大學")
+---
+#### 鏈結
+基本格式:`[我的網站](https://dong-guan-cheng.github.io/pages-demo/project%20web%20dong/guanweb.html "懸停顯示 ")`
