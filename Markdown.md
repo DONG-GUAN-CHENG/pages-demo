@@ -74,3 +74,5 @@ ex:`![NCTU](https://github.com/DONG-GUAN-CHENG/pages-demo/blob/master/photo/交7
 > 妳
 >> 我
 >>> 他
+***
+以上是常用的markdown語法，想知道更多用法可以查看 https://www.itread01.com/content/1546796175.html
