@@ -37,8 +37,6 @@ ex:`![NCTU](https://github.com/DONG-GUAN-CHENG/pages-demo/blob/master/photo/交7
 ![NCTU](https://github.com/DONG-GUAN-CHENG/pages-demo/blob/master/photo/交7.jpg "交通大學")
 ***
 #### 鏈結
-外部
-#### 鏈結
 連接外部URL方式:
 基本格式:`[我的網站](https://dong-guan-cheng.github.io/pages-demo/project%20web%20dong/guanweb.html "懸停顯示")`  
 [我的網站](https://dong-guan-cheng.github.io/pages-demo/project%20web%20dong/guanweb.html "懸停顯示")  
