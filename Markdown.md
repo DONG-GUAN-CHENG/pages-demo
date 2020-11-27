@@ -71,6 +71,6 @@ ex:`![NCTU](https://github.com/DONG-GUAN-CHENG/pages-demo/blob/master/photo/交7
 `>> 我`
 `>>> 他`
 效果:
- 妳
-  我
-   他
+> 妳
+>> 我
+>>> 他
