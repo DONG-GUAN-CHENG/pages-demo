@@ -32,4 +32,4 @@ alt表示圖片顯示失敗時的替代文本
 title表示鼠標懸停在圖片時的替代文本（要加引號）
 URl及為圖片的地址，要用倉庫中的圖片，直接使用`相對路徑`即可
 ex:
-![NCTU](https://github.com/DONG-GUAN-CHENG/pages-demo/raw/master/photo/001. "交通大學")
+![NCTU](/photo/001. "交通大學")
