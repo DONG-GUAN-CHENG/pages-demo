@@ -7,13 +7,13 @@
 ***
 #### 標題  
 ###### 分為一到六級標題->由`#`的數量決定，#為最大一級標題，一級和二級標題下方自動會有分隔線。
----
+***
 #### 文字高亮    
 ###### 此功能能使行內部分`文字高亮`，使用一對反引號 ` ` ，也是合作一篇文章的tag 
----
+***
 #### 換行  
 ###### 在上一行文本的最後`補兩個空白鍵`，下一行的文本就會換行了，或是`在兩行文本直接加一個空行`，也能實現換行效果，不過行間距會比較大
-
+***
 #### 斜體、粗體、刪除線
 語法    效果  
 `*斜體1*`	*斜體1*  
@@ -25,7 +25,7 @@
 `___斜粗體2___`	___斜粗體2___  
 `***~~斜粗體刪除線1~~***`	~~***斜粗體刪除線1~~***    
 `~~***斜粗體刪除線2***~~`	~~***斜粗體刪除線2***~~   
-
+***
 #### 圖片
 基本格式:`![alt](URL title)`
 alt和title可對應到HTML中的alt和title屬性（都可省略）：
@@ -35,7 +35,7 @@ URl及為圖片的地址，要用倉庫中的圖片，直接使用`相對路徑`
 即 `倉庫地址/raw(每個人倉庫名稱不一樣)/master/資料夾/圖片名稱(路徑)`  
 ex:`![NCTU](https://github.com/DONG-GUAN-CHENG/pages-demo/blob/master/photo/交7.jpg "交通大學")`
 ![NCTU](https://github.com/DONG-GUAN-CHENG/pages-demo/blob/master/photo/交7.jpg "交通大學")
-
+***
 #### 鏈結
 基本格式:`[我的網站](https://dong-guan-cheng.github.io/pages-demo/project%20web%20dong/guanweb.html "懸停顯示")`
 [我的網站](https://dong-guan-cheng.github.io/pages-demo/project%20web%20dong/guanweb.html "懸停顯示")
